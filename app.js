@@ -22,6 +22,7 @@ bot.command('start', (context) => {
 
 bot.action('aboutBot', (context) => {
   context.reply('Рандомит блюда из списка');
+  context.answerCbQuery();
 });
 
 bot.action('food', (context) => {
@@ -29,6 +30,7 @@ bot.action('food', (context) => {
   const randomDish = dishes[randomIndex];
 
   context.reply(`Держи: ${randomDish}`);
+  context.answerCbQuery();
 });
 
 bot.action('special food', (context) => {
@@ -36,6 +38,7 @@ bot.action('special food', (context) => {
   const randomSpecialDish = specialDishes[randomIndex];
 
   context.reply(`Держи: ${randomSpecialDish}`);
+  context.answerCbQuery();
 });
 
 bot.launch();
