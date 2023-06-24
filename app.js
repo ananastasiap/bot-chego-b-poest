@@ -42,15 +42,3 @@ bot.action('special food', (context) => {
 });
 
 bot.launch();
-
-
-// bot.command('start', (context) => {
-//   const buttons = Markup.inlineKeyboard([
-//     Markup.button.callback('Что за бот', 'aboutBot'),
-//     Markup.button.callback('🍲', 'food'),
-//     Markup.button.callback('🍕', 'special food')
-//   ]);
-
-//   context.replyWithPhoto({ source: './img/main-pic.png'});
-//   context.reply('Привет! Выбери, что хочешь:', buttons);
-// });
